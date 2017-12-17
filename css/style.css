@@ -1,0 +1,21 @@
+/*feedback form success/error*/
+p.feedbackSuccess{
+  padding:20px;
+  color:white;
+  background-color:#5B9496; 
+}
+
+p.feedbackFail{
+  padding:20px;
+  color:white;
+  background-color:#f06060; 
+}
+
+#mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
+    color: white;
+}
+
+#mainNav .navbar-brand{
+	color:white;
+	font-weight: bold;
+}
