@@ -13,9 +13,16 @@ p.feedbackFail{
 
 #mainNav .navbar-nav>li>a, #mainNav .navbar-nav>li>a:focus {
     color: white;
+    padding-top:30px;
+   /* padding-bottom:20px;*/
 }
 
 #mainNav .navbar-brand{
 	color:white;
 	font-weight: bold;
+}
+
+.fa-bars{
+	
+	font-size: 20px;
 }
