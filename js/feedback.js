@@ -96,3 +96,8 @@ document.getElementsByClassName('screen')[0].addEventListener('click', function(
     }
     document.getElementById('gbs-img-one').src = images[clickCounter];
 })
+
+document.getElementsByClassName('badge-link')[0].addEventListener('click', function(e){
+  e.preventDefault();
+  document.getElementById('gbs-soon').textContent = 'Soon!';
+})
