@@ -38,7 +38,10 @@ document.getElementById('feedbackButton').addEventListener('click', function(e){
     feedbackData.workOK = document.getElementById('workOK').value;
     feedbackData.account = document.getElementById('account').value;
     feedbackData.worst = document.getElementById('worst').value;
-    feedbackData.best = document.getElementById('best').value;
+     feedbackData.confusing = document.getElementById('confusing').value;
+    feedbackData.ugly = document.getElementById('ugly').value;
+     feedbackData.timetable = document.getElementById('timetable').value;
+     feedbackData.best = document.getElementById('best').value;
     feedbackData.faq = document.getElementById('faq').value;
     feedbackData.improve = document.getElementById('improve').value;
     feedbackData.comments = document.getElementById('comments').value;
@@ -50,7 +53,7 @@ document.getElementById('feedbackButton').addEventListener('click', function(e){
         if(feedbackData[i]===''){
             emptyFields.push(feedbackData[i]);
         }
-        if(emptyFields.length === 12){
+        if(emptyFields.length === 15){
             fbFail('The form is empty');
             return;
         }
@@ -86,7 +89,7 @@ function fbFail(error){
 
 //basic change images in screen
 var clickCounter = 0;
-var images = ['img/demo-screen-1.png','img/Stops.png','img/Routes.png', 'img/Register.png','img/Login.png','img/Bus_spotting_2.png'];
+var images = ['img/routes_screen.png','img/stops_screen.png','img/timetables_screen.png', 'img/info_screen.png','img/edit_screen_1.png','img/edit_screen_2.png'];
 document.getElementsByClassName('screen')[0].addEventListener('click', function(e){
     e.preventDefault();
     if(clickCounter<images.length-1){
@@ -100,4 +103,5 @@ document.getElementsByClassName('screen')[0].addEventListener('click', function(
 document.getElementsByClassName('badge-link')[0].addEventListener('click', function(e){
   e.preventDefault();
   document.getElementById('gbs-soon').textContent = 'Soon!';
+  document.getElementById('gbs-test').textContent = 'If you would like to test Galway Bus Spotter email marieoh.app@gmail.com'
 })

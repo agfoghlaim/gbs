@@ -64,12 +64,13 @@
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
                <img src="img/Logo96.png" alt="Galway Bus Spotter Logo"><br><br>
-                 <h1 class="mb-5">Interactive Timetables for all Galway city buses</h1>
+                 <h1 class="mb-5">Offline and Interactive Timetables for all Galway city buses</h1>
                  <div class="col col-lg-6">
 
                      <div class="badges">
               <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
               <h3 id="gbs-soon"></h3>
+              <p id="gbs-test"></p>
             </div></div>
                   
             
@@ -81,7 +82,7 @@
               <div class="device-mockup galaxy_s5 portrait black">
                 <div class="device">
                   <div class="screen">
-                    <img id="gbs-img-one" src="img/demo-screen-1.png" class="img-fluid" alt="">
+                    <img id="gbs-img-one" src="img/routes_screen.png" class="img-fluid" alt="">
                   </div>
 
                </div>
@@ -99,9 +100,9 @@
           <h2 class=" text-center text-uppercase text-secondary mb-0">About</h2><hr><br>
           <p  class="text-left">Galway Bus Spotter's unique interactive timetables enable users to share extra bus information.</p>
           <br>
-          <p class="text-left">Say you're waiting at a bus stop. When your bus arrives or if you spot another bus going by, the app lets you add this information to the relevant timetable. </p><p class="text-left">It will be instantly visible to other Galway Bus Spotter users.</p>
+          <p class="text-left">Say you're waiting at a bus stop. When your bus arrives or if you spot another bus going by, the app lets you tag the bus so the information is added to the relevant timetable. </p><p class="text-left">It will be instantly visible to other Galway Bus Spotter users.</p>
           <br>
-            <p class="text-left">Say you're waiting at a bus stop again. Your bus is late and there is no real time information available.</p><p class="text-left"> If the bus has been spotted by anybody earlier in the route, the app will tell you where , when and how early or late it was running at the time.</p>
+            <p class="text-left">Say you're waiting at a bus stop again. Your bus is late and there is no real time information available.</p><p class="text-left"> If the bus has been spotted and tagged by anybody earlier in the route, the app will tell you where , when and how early or late it was running at the time.</p>
          
         </div>
 
@@ -141,11 +142,11 @@
                 <textarea type="text" class="form-control" id="install" placeholder=""></textarea>
               </div>
                       <div class="form-group">
-                <label for="workOK" >Did the app work properly?</label>
+                <label for="workOK" >What features of the app did not work properly?</label>
                 <textarea type="text" class="form-control" id="workOK" placeholder=""></textarea>
               </div>
                 <div class="form-group">
-                <label for="account" >If you registered an account, did you encounter any problems?</label>
+                <label for="account" >If you registered an account, what problems did you encounter?</label>
                 <textarea type="text" class="form-control" id="account" placeholder=""></textarea>
               </div>
               <div class="form-group">
@@ -153,9 +154,22 @@
                 <textarea class="form-control" rows="3" id="worst"></textarea>
               </div>
               <div class="form-group">
+                <label for="confusing" >What about the app was most confusing?</label>
+                <textarea class="form-control" rows="3" id="confusing"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="timetable">Did you notice any inaccuracies in the timetables?</label>
+                <textarea class="form-control" rows="3" id="timetable"></textarea>
+              </div>
+         
+              <div class="form-group">
                 <label for="best">What are the 3 best things about the app?</label>
                 <textarea class="form-control" rows="3" id="best"></textarea>
               </div>
+            <div class="form-group">
+              <label for="ugly">What was the most aesthetically displeasing thing about the app?</label>
+              <textarea class="form-control" rows="3" id="ugly"></textarea>
+            </div>
             <div class="form-group">
               <label for="faq">What questions would you like to see answered in the FAQ?</label>
               <textarea class="form-control" rows="3" id="faq"></textarea>
